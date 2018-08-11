@@ -1,13 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <head>AMBABUS<i class="fa fa-bus"></i>
-    <title>MAPA</title>
-    <body>
-<style>
+<html lang="en">
+  <head>
+    <title>Colectivos-AMBAbuS</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- script src="js/escript.js" defer="" ></script-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+<body>
+<ul>
+  <li><a class="active" href="https://ambabus.glitch.me/">INICIO</a></li>
+  <li><a href="https://mapa-ambabus.glitch.me/">Mapa</a></li>
+  <li><a href="https://colectivo-ambabus.glitch.me/">Colectivos</a></li>
+  <li><a href="https://ambabus.glitch.me/">Trenes</a></li>
+  <li><a href="https://ambabus.glitch.me/">Subtes</a></li>
+  <li><a href="#about">SALIR</a></li>
+</ul> <h1>AMBABUS <i class="fa fa-bus"></i></h1>
+  
+  <h1>►Mapas de Referencia◄</h1>
+  <style>
+/*FONDO*/
+body {
+    /*background-color: aqua;*/
+  background-image: url("https://image.freepik.com/foto-gratis/uso-de-cemento-o-textura-de-hormigon-para-el-fondo_1205-2570.jpg");
+  font-family: 'Shrikhand', cursive;
+font-family: 'Playfair Display', serif;
+   background-image: url("https://professor-falken.com/wp-content/uploads/2017/05/ciudad-rascacielos-edificios-skyline-arquitectura-luces-Fondos-de-Pantalla-HD-professor-falken.com_.jpg");
+    background-size: 150%;
+}
+
+      body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* AMBA*/
+header {
+    padding: 60px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color:aqua;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Gracias por tu visita*/
+footer {
+    padding: 30px;
+    text-align: center;
+    color: AntiqueWhite;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+p span {
+  float: right;
+}
+/*enlaces*/
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0.5px;
     overflow: hidden;
     background-color: #333;
 }
@@ -15,146 +108,91 @@ ul {
 li {
     float: left;
 }
-
+/*letras del enlace */
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
-}
-</style>
-<head>
-<body>
+    background-color:black;
 
-<ul>
-  <li><a class="active" href="#home">INICIO</a></li>
-  <li><a href="#Mapa">Mapa</a></li>
-  <li><a href="#Colectivos">Colectivos</a></li>
-  <li><a href="#Trenes">Trenes</a></li>
-  <li><a href="#Subtes">Subtes</a></li>
-  <li><a href="#about">SALIR</a></li>
-</ul>
-<style>
-#customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
+}
+/*Buenos aires ciudad*/
+.amar {
+  background-color: yellow ;
+  color: black;
+}
+input[type=text], select {
     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-#customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: lightgreen;
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
     color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-</style>
-</head>
-<body>
 
-<table id="customers"><th>>CAPITAL FEDERAL</th>
-  <tr>
-    <th>Lineas</th>
-    <th>Recorridos</th>
-  </tr>
-  <tr>
-    <td>-Alfreds Futterkiste</td>
-    <td>-Maria Anders</td>
-  </tr>
-  <tr>
-    <td>-Berglunds snabbköp</td>
-    <td>-Christina Berglund</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-  </tr>
+input[type=submit]:hover {
+    background-color: #45a049;
+}
 
-</table>
-<table id="customers"><th>>ZONA NORTE</th>
-  <tr>
-    <th>Lineas</th>
-    <th>Recorridos</th>
-  </tr>
-  <tr>
-    <td>-Alfreds Futterkiste</td>
-    <td>-Maria Anders</td>
-  </tr>
-  <tr>
-    <td>-Berglunds snabbköp</td>
-    <td>-Christina Berglund</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-  </tr>
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  background-align:center;
+}
+h1{
+  text-align: center;
+  text-shadow: 1px 1px lightblue;
 
-</table><table id="customers"><th>>ZONA OESTE</th>
-  <tr>
-    <th>Lineas</th>
-    <th>Recorridos</th>
-  </tr>
-  <tr>
-    <td>-Alfreds Futterkiste</td>
-    <td>-Maria Anders</td>
-  </tr>
-  <tr>
-    <td>-Berglunds snabbköp</td>
-    <td>-Christina Berglund</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-  </tr>
+}
+    a{
+   background-color:#333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;  
+    }
+  
+    } 
+  </style>
+  
+  <header>
+  <h2>AMBABUS<i class="fa fa-bus"></i></h2>
+</header>
 
-</table><table id="customers"><th>>ZONA SURL</th>
-  <tr>
-    <th>Lineas</th>
-    <th>Recorridos</th>
-  </tr>
-  <tr>
-    <td>-Alfreds Futterkiste</td>
-    <td>-Maria Anders</td>
-  </tr>
-  <tr>
-    <td>-Berglunds snabbköp</td>
-    <td>-Christina Berglund</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-  </tr>
-
-</table>
+      
+<!--a href='https://www.freepik.es/vector-gratis/resumen-de-fondo-con-una-textura-de-la-acuarela_886474.htm'>Vector de Fondo creado por kjpargeter</a-->
+      
+      <footer>
+        
+        
+  <p>¡Gracias por tu Visita! </p>
+        
+  <p>►Buen viaje◄</p>
+        
+        <p ><span class="amar">≻▻Buenos Aires Ciudad◅≺</span></p>     
+</footer>
+    <!-- iframe src='https://offline2018.glitch.me'></iframe -->
+    <!-- iframe src='https://offline2018.glitch.me'></iframe -->
+    <!-- div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div -->
+    <!-- script src="https://button.glitch.me/button.js"></script -->
   </body>
 </html>
