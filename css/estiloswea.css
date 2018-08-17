@@ -10,6 +10,7 @@ font-family: 'Playfair Display', serif;
 
       body {
     font-family: Arial, Helvetica, sans-serif;
+ 
 }
 * {
     box-sizing: border-box;
@@ -21,7 +22,7 @@ font-family: 'Playfair Display', serif;
 header {
     padding: 60px;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     color: white;
   
 }
@@ -38,7 +39,7 @@ nav {
 /* Style the list inside the menu */
 nav ul {
     list-style-type: none;
-    padding: 20px;
+    padding: 2px;
 }
 
 article {
@@ -137,16 +138,18 @@ div {
 }
 h1{
   text-align: center;
-  text-shadow: 1px 1px lightblue;
+  text-shadow: 4px 1px ghostwhite;
+  margin-right: 400px;
+    margin-left: 400px;
+    border-radius: 25px;
 
 }
     a{
-   background-color:#333;
-    color: white;
-    padding: 10px 20px;
+   background-color:transparent;
+    color:#333;
+    padding: 2px 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;  
     }
   
-    
